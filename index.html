@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To My Love</title>
+  <!--<link rel="stylesheet" href="style.css" -->
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #d6336c;
+}
+
+.sub {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #d6336c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+#surprise {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff0f5;
+  border: 2px dashed #d6336c;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Special Day, My Love!</h1>
+    <p class="sub">To the most amazing girl in the world</p>
+
+    <div class="gallery">
+      <img src="WhatsApp Image 2025-05-06 at 12.10.11_79dcbb5a.jpg" alt="Pic 1" />
+      <img src="WhatsApp Image 2025-05-06 at 12.10.14_9a708d7b.jpg" alt="Pic 2" />
+      <img src="WhatsApp Image 2025-05-06 at 12.11.23_6d6909d1.jpg" alt="Pic 3" />
+    </div>
+
+    <div class="message">
+      <h2>Our Journey</h2>
+      <p>
+        From the first time we met, my world has changed. You bring light,
+        laughter, and love into every single day. I'm so lucky to have you.
+      </p>
+    </div>
+
+    <button onclick="showSurprise()">Click for Surprise</button>
+    <div id="surprise" class="hidden">
+      <h3>I Love You Forever!</h3>
+      <p>Here's to many more memories together!</p>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="romantic.mp3" type="audio/mp3" />
+  </audio>
+
+  <!--<script src="script.js"></script>-->
+  <script>
+    function showSurprise() {
+  const surprise = document.getElementById('surprise');
+  surprise.classList.toggle('hidden');
+}
+  </script>
+</body>
+</html>
